@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -238,9 +238,20 @@
 /* Begin PBXProject section */
 		2DA285930AEE5D640030A4DD /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					2D21905A0AF0270A007154B7 = {
+						DevelopmentTeam = 7ZUYLP664Z;
+					};
+				};
+			};
 			buildConfigurationList = 2DA285940AEE5D640030A4DD /* Build configuration list for PBXProject "FFGLPlugins" */;
 			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 2DA285910AEE5D640030A4DD;
 			productRefGroup = 2DA285A10AEE5E480030A4DD /* Products */;
 			projectDirPath = "";
@@ -369,8 +380,12 @@
 		2D2190680AF0278A007154B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
@@ -385,13 +400,15 @@
 				HEADER_SEARCH_PATHS = ../../../Include;
 				INFOPLIST_FILE = "FFGLBrightness-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"-framework",
 					OpenGL,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = FFGLBrightness_debug;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -400,8 +417,12 @@
 		2D2190690AF0278A007154B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = YES;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
@@ -411,13 +432,15 @@
 				HEADER_SEARCH_PATHS = ../../../Include;
 				INFOPLIST_FILE = "FFGLBrightness-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = (
 					"-framework",
 					OpenGL,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = FFGLBrightness;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
@@ -545,7 +568,7 @@
 					ppc,
 				);
 				COPY_PHASE_STRIP = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Debug;
 		};
@@ -557,7 +580,7 @@
 					ppc,
 				);
 				COPY_PHASE_STRIP = YES;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 			};
 			name = Release;
 		};
