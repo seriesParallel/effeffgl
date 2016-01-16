@@ -9,7 +9,7 @@
 static CFFGLPluginInfo PluginInfo ( 
 	FFGLMirror::CreateInstance,	// Create method
 	"GLMR",								// Plugin unique ID											
-	"FFGLMirror",			// Plugin name											
+	"FFGLBlue",			// Plugin name
 	1,						   			// API major version number 													
 	000,								  // API minor version number	
 	1,										// Plugin major version number
@@ -76,11 +76,11 @@ DWORD FFGLMirror::ProcessOpenGL(ProcessOpenGLStruct *pGL)
   glVertex2f(-1,1);
 
   //upper right
-  glTexCoord2d(maxCoords.s*0.5, maxCoords.t);
+  glTexCoord2d(maxCoords.s*0.25, maxCoords.t);
   glVertex2f(0,1);
 
   //lower right
-  glTexCoord2d(maxCoords.s*0.5, 0.0);
+  glTexCoord2d(maxCoords.s*0.25, 0.0);
   glVertex2f(0,-1);
   glEnd();
 

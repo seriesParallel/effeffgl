@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D21905A0AF0270A007154B7"
-            BuildableName = "FFGLBrightness.bundle"
-            BlueprintName = "FFGLBrightness"
-            ReferencedContainer = "container:FFGLPlugins.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,6 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1C539A3A1C45A3BF00A3D249"
+            BuildableName = "FFGLPink.bundle"
+            BlueprintName = "FFGLPink"
+            ReferencedContainer = "container:FFGLPlugins.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1C539A3A1C45A3BF00A3D249"
+            BuildableName = "FFGLPink.bundle"
+            BlueprintName = "FFGLPink"
+            ReferencedContainer = "container:FFGLPlugins.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

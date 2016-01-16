@@ -1,5 +1,5 @@
-#ifndef FFGLPink_H
-#define FFGLPink_H
+#ifndef FFGLMirror_H
+#define FFGLMirror_H
 
 #include "../FFGLPluginSDK.h"
 

@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE75EA41C4AFCD1005FAA9C /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */; };
+		1CE75EA51C4AFCD1005FAA9C /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */; };
+		1CE75EA61C4AFCD1005FAA9C /* FFGLPluginManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CA0AEE61AF0030A4DD /* FFGLPluginManager.cpp */; };
+		1CE75EA71C4AFCD1005FAA9C /* FFGLPluginSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CB0AEE61AF0030A4DD /* FFGLPluginSDK.cpp */; };
+		1CE75EA81C4AFCD1005FAA9C /* FFGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CC0AEE61AF0030A4DD /* FFGL.cpp */; };
+		1CE75EA91C4AFCD1005FAA9C /* FFGLMirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */; };
+		1CE75EB11C4AFD96005FAA9C /* XCode in Resources */ = {isa = PBXBuildFile; fileRef = 1CE75EB01C4AFD96005FAA9C /* XCode */; };
+		1CE75EB41C4AFF09005FAA9C /* FFGLBlue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CE75EB21C4AFF09005FAA9C /* FFGLBlue.cpp */; };
 		2D21905D0AF02753007154B7 /* FFGLBrightness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285A50AEE5F780030A4DD /* FFGLBrightness.cpp */; };
 		2D2190610AF02773007154B7 /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */; };
 		2D2190620AF02774007154B7 /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */; };
@@ -18,7 +26,6 @@
 		2D21908F0AF02BD1007154B7 /* FFGLPluginManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CA0AEE61AF0030A4DD /* FFGLPluginManager.cpp */; };
 		2D2190900AF02BD1007154B7 /* FFGLPluginSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CB0AEE61AF0030A4DD /* FFGLPluginSDK.cpp */; };
 		2D2190910AF02BD1007154B7 /* FFGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CC0AEE61AF0030A4DD /* FFGL.cpp */; };
-		2D21909B0AF02C2C007154B7 /* FFGLMirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */; };
 		2D7743DD0C4C84B1008A80BD /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */; };
 		2D7743DE0C4C84B1008A80BD /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */; };
 		2D7743DF0C4C84B1008A80BD /* FFGLPluginManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CA0AEE61AF0030A4DD /* FFGLPluginManager.cpp */; };
@@ -44,6 +51,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CE75EAE1C4AFCD1005FAA9C /* FFGLBlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFGLBlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE75EAF1C4AFCD2005FAA9C /* FFGLBlue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FFGLBlue-Info.plist"; path = "/Users/maryscahill/effeffgl/FFGL-SDK/Projects/FFGLPlugins/XCode/FFGLBlue-Info.plist"; sourceTree = "<absolute>"; };
+		1CE75EB01C4AFD96005FAA9C /* XCode */ = {isa = PBXFileReference; lastKnownFileType = folder; name = XCode; sourceTree = "<group>"; };
+		1CE75EB21C4AFF09005FAA9C /* FFGLBlue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFGLBlue.cpp; sourceTree = "<group>"; };
+		1CE75EB31C4AFF09005FAA9C /* FFGLBlue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFGLBlue.hpp; sourceTree = "<group>"; };
 		2D21902D0AF02467007154B7 /* FFGLBrightness-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FFGLBrightness-Info.plist"; sourceTree = "<group>"; };
 		2D21905B0AF0270A007154B7 /* FFGLBrightness_debug.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFGLBrightness_debug.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; name = FFGLMirror.cpp; path = ../../../Source/FFGLPlugins/FFGLMirror/FFGLMirror.cpp; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
@@ -70,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1CE75EAA1C4AFCD1005FAA9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D2190590AF0270A007154B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +136,8 @@
 				2DC88A380AF40E6300199EB1 /* FFGLShader.cpp */,
 				2DC889ED0AF405C700199EB1 /* FFGLTile.cpp */,
 				2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */,
+				1CE75EB21C4AFF09005FAA9C /* FFGLBlue.cpp */,
+				1CE75EB31C4AFF09005FAA9C /* FFGLBlue.hpp */,
 				2DA287A70AEEFE950030A4DD /* OpenGL.framework */,
 				2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */,
 				2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */,
@@ -130,6 +151,8 @@
 				2DC889E60AF4057200199EB1 /* FFGLTile-Info.plist */,
 				2DFDB2CB0AF6739E00367FE2 /* FFGLHeat-Info.plist */,
 				CC69231A0CF2ED5B008718B6 /* FFGLTime-Info.plist */,
+				1CE75EAF1C4AFCD2005FAA9C /* FFGLBlue-Info.plist */,
+				1CE75EB01C4AFD96005FAA9C /* XCode */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +164,7 @@
 				2DC889E50AF4057200199EB1 /* FFGLTile_debug.bundle */,
 				2DFDB2CA0AF6739E00367FE2 /* FFGLHeat_debug.bundle */,
 				2D7743E60C4C84B1008A80BD /* FFGLTime_debug.bundle */,
+				1CE75EAE1C4AFCD1005FAA9C /* FFGLBlue.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +172,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1CE75EA11C4AFCD1005FAA9C /* FFGLBlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE75EAB1C4AFCD1005FAA9C /* Build configuration list for PBXNativeTarget "FFGLBlue" */;
+			buildPhases = (
+				1CE75EA21C4AFCD1005FAA9C /* Resources */,
+				1CE75EA31C4AFCD1005FAA9C /* Sources */,
+				1CE75EAA1C4AFCD1005FAA9C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFGLBlue;
+			productName = FFGLBrightness;
+			productReference = 1CE75EAE1C4AFCD1005FAA9C /* FFGLBlue.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		2D21905A0AF0270A007154B7 /* FFGLBrightness */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D2190670AF0278A007154B7 /* Build configuration list for PBXNativeTarget "FFGLBrightness" */;
@@ -239,6 +280,7 @@
 		2DA285930AEE5D640030A4DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0720;
 				TargetAttributes = {
 					2D21905A0AF0270A007154B7 = {
 						DevelopmentTeam = 7ZUYLP664Z;
@@ -246,7 +288,7 @@
 				};
 			};
 			buildConfigurationList = 2DA285940AEE5D640030A4DD /* Build configuration list for PBXProject "FFGLPlugins" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -262,15 +304,24 @@
 				2DC889D80AF4057200199EB1 /* FFGLTile */,
 				2DFDB2BB0AF6739E00367FE2 /* FFGLHeat */,
 				2D7743D90C4C84B1008A80BD /* FFGLTime */,
+				1CE75EA11C4AFCD1005FAA9C /* FFGLBlue */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1CE75EA21C4AFCD1005FAA9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D2190570AF0270A007154B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE75EB11C4AFD96005FAA9C /* XCode in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +356,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1CE75EA31C4AFCD1005FAA9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE75EA41C4AFCD1005FAA9C /* FFGLPluginInfo.cpp in Sources */,
+				1CE75EA51C4AFCD1005FAA9C /* FFGLPluginInfoData.cpp in Sources */,
+				1CE75EA61C4AFCD1005FAA9C /* FFGLPluginManager.cpp in Sources */,
+				1CE75EA71C4AFCD1005FAA9C /* FFGLPluginSDK.cpp in Sources */,
+				1CE75EA81C4AFCD1005FAA9C /* FFGL.cpp in Sources */,
+				1CE75EA91C4AFCD1005FAA9C /* FFGLMirror.cpp in Sources */,
+				1CE75EB41C4AFF09005FAA9C /* FFGLBlue.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D2190580AF0270A007154B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,7 +392,6 @@
 				2D21908F0AF02BD1007154B7 /* FFGLPluginManager.cpp in Sources */,
 				2D2190900AF02BD1007154B7 /* FFGLPluginSDK.cpp in Sources */,
 				2D2190910AF02BD1007154B7 /* FFGL.cpp in Sources */,
-				2D21909B0AF02C2C007154B7 /* FFGLMirror.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,12 +441,73 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1CE75EAC1C4AFCD1005FAA9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_OS_MAC=1",
+					"_DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = ../../../Include;
+				INFOPLIST_FILE = "FFGLBlue-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					OpenGL,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1CE75EAD1C4AFCD1005FAA9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_OS_MAC=1";
+				HEADER_SEARCH_PATHS = ../../../Include;
+				INFOPLIST_FILE = "FFGLBlue-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					OpenGL,
+				);
+				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLMirror;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		2D2190680AF0278A007154B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = NO;
 				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
@@ -406,6 +531,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLBrightness;
 				PRODUCT_NAME = FFGLBrightness_debug;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
@@ -417,9 +543,9 @@
 		2D2190690AF0278A007154B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = YES;
 				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
@@ -438,6 +564,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLBrightness;
 				PRODUCT_NAME = FFGLBrightness;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
@@ -449,6 +576,7 @@
 		2D2190940AF02BD1007154B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -471,6 +599,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLMirror;
 				PRODUCT_NAME = FFGLMirror_debug;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -480,6 +609,7 @@
 		2D2190950AF02BD1007154B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -497,6 +627,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLMirror;
 				PRODUCT_NAME = FFGLMirror;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -506,6 +637,7 @@
 		2D7743E40C4C84B1008A80BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -528,6 +660,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLTime;
 				PRODUCT_NAME = FFGLTime_debug;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -537,6 +670,7 @@
 		2D7743E50C4C84B1008A80BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -554,6 +688,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLTime;
 				PRODUCT_NAME = FFGLTime;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -563,30 +698,27 @@
 		2DA285950AEE5D640030A4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		2DA285960AEE5D640030A4DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		2DC889E30AF4057200199EB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -609,6 +741,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLTile;
 				PRODUCT_NAME = FFGLTile_debug;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -618,6 +751,7 @@
 		2DC889E40AF4057200199EB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -635,6 +769,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLTile;
 				PRODUCT_NAME = FFGLTile;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -644,6 +779,7 @@
 		2DFDB2C80AF6739E00367FE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -666,6 +802,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLHeat;
 				PRODUCT_NAME = FFGLHeat_debug;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -675,6 +812,7 @@
 		2DFDB2C90AF6739E00367FE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = ../../../Binaries/OSX;
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -692,6 +830,7 @@
 					OpenGL,
 				);
 				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FFGLHeat;
 				PRODUCT_NAME = FFGLHeat;
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
@@ -701,6 +840,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1CE75EAB1C4AFCD1005FAA9C /* Build configuration list for PBXNativeTarget "FFGLBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE75EAC1C4AFCD1005FAA9C /* Debug */,
+				1CE75EAD1C4AFCD1005FAA9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D2190670AF0278A007154B7 /* Build configuration list for PBXNativeTarget "FFGLBrightness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
