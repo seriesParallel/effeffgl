@@ -7,9 +7,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>FFGLMirror</string>
+	<string>FFGLBlue</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.FFGLMirror</string>
+	<string>com.yourcompany.FFGLBlue</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>

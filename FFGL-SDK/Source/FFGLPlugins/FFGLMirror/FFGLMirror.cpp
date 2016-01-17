@@ -103,6 +103,29 @@ DWORD FFGLMirror::ProcessOpenGL(ProcessOpenGLStruct *pGL)
   glTexCoord2d(0.0, 0.0);
   glVertex2f(1,-1);
   glEnd();
+  
+  
+  //now, the shit I'm doing here to test
+  glBegin(GL_QUADS);
+  
+  //lower left
+  glTexCoord2d(0,0);
+  glVertex2f(-.5,-.7);
+  
+  //upper left
+  glTexCoord2d(0, maxCoords.t);
+  glVertex2f(-.5,.6);
+  
+  //upper right
+  glTexCoord2d(maxCoords.s*0.25, maxCoords.t);
+  glVertex2f(.5,.9);
+  
+  //lower right
+  glTexCoord2d(maxCoords.s*0.25, 0.0);
+  glVertex2f(.7,-.7);
+  glEnd();
+  
+  
 
   //unbind the texture
   glBindTexture(GL_TEXTURE_2D, 0);
