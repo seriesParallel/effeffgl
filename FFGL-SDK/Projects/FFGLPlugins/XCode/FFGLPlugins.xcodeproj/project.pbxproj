@@ -14,7 +14,6 @@
 		1CE75EA81C4AFCD1005FAA9C /* FFGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CC0AEE61AF0030A4DD /* FFGL.cpp */; };
 		1CE75EA91C4AFCD1005FAA9C /* FFGLMirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */; };
 		1CE75EB11C4AFD96005FAA9C /* XCode in Resources */ = {isa = PBXBuildFile; fileRef = 1CE75EB01C4AFD96005FAA9C /* XCode */; };
-		1CE75EB41C4AFF09005FAA9C /* FFGLBlue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CE75EB21C4AFF09005FAA9C /* FFGLBlue.cpp */; };
 		2D21905D0AF02753007154B7 /* FFGLBrightness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285A50AEE5F780030A4DD /* FFGLBrightness.cpp */; };
 		2D2190610AF02773007154B7 /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */; };
 		2D2190620AF02774007154B7 /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */; };
@@ -53,9 +52,7 @@
 /* Begin PBXFileReference section */
 		1CE75EAE1C4AFCD1005FAA9C /* FFGLBlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFGLBlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE75EAF1C4AFCD2005FAA9C /* FFGLBlue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FFGLBlue-Info.plist"; path = "/Users/maryscahill/effeffgl/FFGL-SDK/Projects/FFGLPlugins/XCode/FFGLBlue-Info.plist"; sourceTree = "<absolute>"; };
-		1CE75EB01C4AFD96005FAA9C /* XCode */ = {isa = PBXFileReference; lastKnownFileType = folder; name = XCode; sourceTree = "<group>"; };
-		1CE75EB21C4AFF09005FAA9C /* FFGLBlue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFGLBlue.cpp; sourceTree = "<group>"; };
-		1CE75EB31C4AFF09005FAA9C /* FFGLBlue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FFGLBlue.hpp; sourceTree = "<group>"; };
+		1CE75EB01C4AFD96005FAA9C /* XCode */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCode; sourceTree = "<group>"; };
 		2D21902D0AF02467007154B7 /* FFGLBrightness-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FFGLBrightness-Info.plist"; sourceTree = "<group>"; };
 		2D21905B0AF0270A007154B7 /* FFGLBrightness_debug.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFGLBrightness_debug.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; name = FFGLMirror.cpp; path = ../../../Source/FFGLPlugins/FFGLMirror/FFGLMirror.cpp; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
@@ -136,8 +133,6 @@
 				2DC88A380AF40E6300199EB1 /* FFGLShader.cpp */,
 				2DC889ED0AF405C700199EB1 /* FFGLTile.cpp */,
 				2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */,
-				1CE75EB21C4AFF09005FAA9C /* FFGLBlue.cpp */,
-				1CE75EB31C4AFF09005FAA9C /* FFGLBlue.hpp */,
 				2DA287A70AEEFE950030A4DD /* OpenGL.framework */,
 				2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */,
 				2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */,
@@ -366,7 +361,6 @@
 				1CE75EA71C4AFCD1005FAA9C /* FFGLPluginSDK.cpp in Sources */,
 				1CE75EA81C4AFCD1005FAA9C /* FFGL.cpp in Sources */,
 				1CE75EA91C4AFCD1005FAA9C /* FFGLMirror.cpp in Sources */,
-				1CE75EB41C4AFF09005FAA9C /* FFGLBlue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

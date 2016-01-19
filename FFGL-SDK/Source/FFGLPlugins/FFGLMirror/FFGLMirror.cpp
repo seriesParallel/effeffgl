@@ -64,7 +64,9 @@ DWORD FFGLMirror::ProcessOpenGL(ProcessOpenGLStruct *pGL)
   //(default texturemapping behavior of OpenGL is to
   //multiply texture colors by the current gl color)
   
-  //first, the left side of the mirror
+  //////////////////////////////////////////////
+  //Draw the whole texture (video from resolume)
+  //////////////////////////////////////////////
   glBegin(GL_QUADS);
 
   //lower left
@@ -76,33 +78,15 @@ DWORD FFGLMirror::ProcessOpenGL(ProcessOpenGLStruct *pGL)
   glVertex2f(-1,1);
 
   //upper right
-  glTexCoord2d(maxCoords.s*0.25, maxCoords.t);
-  glVertex2f(0,1);
-
-  //lower right
-  glTexCoord2d(maxCoords.s*0.25, 0.0);
-  glVertex2f(0,-1);
-  glEnd();
-
-  //now, the right side of the mirror
-  glBegin(GL_QUADS);
-
-  //lower left
-  glTexCoord2d(maxCoords.s*0.5, 0.0);
-  glVertex2f(0,-1);
-
-  //upper left
-  glTexCoord2d(maxCoords.s*0.5, maxCoords.t);
-  glVertex2f(0,1);
-
-  //upper right
-  glTexCoord2d(0.0, maxCoords.t);
+  glTexCoord2d(maxCoords.s, maxCoords.t);
   glVertex2f(1,1);
 
   //lower right
-  glTexCoord2d(0.0, 0.0);
+  glTexCoord2d(maxCoords.s, 0.0);
   glVertex2f(1,-1);
   glEnd();
+
+
 
   //unbind the texture
   glBindTexture(GL_TEXTURE_2D, 0);
