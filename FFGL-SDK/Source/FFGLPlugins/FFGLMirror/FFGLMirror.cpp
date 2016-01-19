@@ -3,6 +3,9 @@
 #include "FFGLMirror.h"
 #include "Math.h"
 
+#define FFPARAM_Red (0)
+#define FFPARAM_Green (1)
+#define FFPARAM_Blue (2)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //  Plugin information
@@ -33,7 +36,16 @@ FFGLMirror::FFGLMirror()
 	SetMinInputs(1);
 	SetMaxInputs(1);
 
-	// No Parameters
+  
+  // Parameters
+  SetParamInfo(FFPARAM_Red, "Red", FF_TYPE_STANDARD, 0.5f);
+  m_Red = 0.5f;
+  
+  SetParamInfo(FFPARAM_Green, "Green", FF_TYPE_STANDARD, 0.5f);
+  m_Green = 0.5f;
+  
+  SetParamInfo(FFPARAM_Blue, "Blue", FF_TYPE_STANDARD, 0.5f);
+  m_Blue = 0.5f;
 }
 
 
@@ -147,4 +159,52 @@ DWORD FFGLMirror::ProcessOpenGL(ProcessOpenGLStruct *pGL)
   glDisable(GL_TEXTURE_2D);
 
   return FF_SUCCESS;
+}
+
+DWORD FFGLMirror::GetParameter(DWORD dwIndex)
+{
+  DWORD dwRet;
+  
+  switch (dwIndex) {
+      
+    case FFPARAM_Red:
+      *((float *)(unsigned)&dwRet) = m_Red;
+      return dwRet;
+    case FFPARAM_Green:
+      *((float *)(unsigned)&dwRet) = m_Green;
+      return dwRet;
+    case FFPARAM_Blue:
+      *((float *)(unsigned)&dwRet) = m_Blue;
+      return dwRet;
+      
+    default:
+      return FF_FAIL;
+  }
+}
+
+DWORD FFGLMirror::SetParameter(const SetParameterStruct* pParam)
+{
+  if (pParam != NULL) {
+    
+    switch (pParam->ParameterNumber) {
+        
+      case FFPARAM_Red:
+        m_Red = *((float *)(unsigned)&(pParam->NewParameterValue));
+        break;
+      case FFPARAM_Green:
+        m_Green = *((float *)(unsigned)&(pParam->NewParameterValue));
+        break;
+      case FFPARAM_Blue:
+        m_Blue = *((float *)(unsigned)&(pParam->NewParameterValue));
+        break;
+        
+      default:
+        return FF_FAIL;
+    }
+    
+    return FF_SUCCESS;
+    
+  }
+  
+  return FF_FAIL;
 }
