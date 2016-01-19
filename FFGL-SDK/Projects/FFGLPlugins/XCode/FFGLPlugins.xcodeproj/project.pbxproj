@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CCFC9EE1C4DAFC300F21BB2 /* FFGLMirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */; };
 		1CE75EA41C4AFCD1005FAA9C /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */; };
 		1CE75EA51C4AFCD1005FAA9C /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */; };
 		1CE75EA61C4AFCD1005FAA9C /* FFGLPluginManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CA0AEE61AF0030A4DD /* FFGLPluginManager.cpp */; };
 		1CE75EA71C4AFCD1005FAA9C /* FFGLPluginSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CB0AEE61AF0030A4DD /* FFGLPluginSDK.cpp */; };
 		1CE75EA81C4AFCD1005FAA9C /* FFGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CC0AEE61AF0030A4DD /* FFGL.cpp */; };
 		1CE75EB11C4AFD96005FAA9C /* XCode in Resources */ = {isa = PBXBuildFile; fileRef = 1CE75EB01C4AFD96005FAA9C /* XCode */; };
-		1CE75EC81C4B26D1005FAA9C /* FFGLMirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */; };
 		2D21905D0AF02753007154B7 /* FFGLBrightness.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285A50AEE5F780030A4DD /* FFGLBrightness.cpp */; };
 		2D2190610AF02773007154B7 /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */; };
 		2D2190620AF02774007154B7 /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */; };
@@ -371,7 +371,7 @@
 				1CE75EA61C4AFCD1005FAA9C /* FFGLPluginManager.cpp in Sources */,
 				1CE75EA71C4AFCD1005FAA9C /* FFGLPluginSDK.cpp in Sources */,
 				1CE75EA81C4AFCD1005FAA9C /* FFGL.cpp in Sources */,
-				1CE75EC81C4B26D1005FAA9C /* FFGLMirror.cpp in Sources */,
+				1CCFC9EE1C4DAFC300F21BB2 /* FFGLMirror.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
