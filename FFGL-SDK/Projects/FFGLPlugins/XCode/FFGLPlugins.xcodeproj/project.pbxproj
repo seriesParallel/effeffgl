@@ -50,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CC007691C503EDC002A0AE7 /* RGBtoHSV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RGBtoHSV.cpp; path = ../../../Source/FFGLPlugins/RGBtoHSV.cpp; sourceTree = "<group>"; };
+		1CC0076A1C503EDC002A0AE7 /* RGBtoHSV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RGBtoHSV.hpp; path = ../../../Source/FFGLPlugins/RGBtoHSV.hpp; sourceTree = "<group>"; };
 		1CE75EAE1C4AFCD1005FAA9C /* FFGLBlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFGLBlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE75EAF1C4AFCD2005FAA9C /* FFGLBlue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FFGLBlue-Info.plist"; path = "/Users/maryscahill/effeffgl/FFGL-SDK/Projects/FFGLPlugins/XCode/FFGLBlue-Info.plist"; sourceTree = "<absolute>"; };
 		1CE75EB01C4AFD96005FAA9C /* XCode */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XCode; sourceTree = "<group>"; };
@@ -129,6 +131,8 @@
 			children = (
 				2D7743E90C4C8500008A80BD /* FFGLTime.cpp */,
 				2DFDB2E90AF674AB00367FE2 /* FFGLHeat.cpp */,
+				1CC007691C503EDC002A0AE7 /* RGBtoHSV.cpp */,
+				1CC0076A1C503EDC002A0AE7 /* RGBtoHSV.hpp */,
 				2DC88AC60AF4153F00199EB1 /* FFGLExtensions.cpp */,
 				2DC88A380AF40E6300199EB1 /* FFGLShader.cpp */,
 				2DC889ED0AF405C700199EB1 /* FFGLTile.cpp */,
