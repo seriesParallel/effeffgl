@@ -25,9 +25,10 @@ using namespace std;
 
 // Define our vector (resizable array) of Particle2D objects
 vector<Particle2D> p;
+vector<Particle2D> p2;
 
 // Specify a limit for the size of our particle vector
-const int MAX_PARTICLES = 200;
+const int MAX_PARTICLES = 800;
 
 GLint windowWidth;             // Width of our window
 GLint windowHeight;              // Heightof our window
@@ -99,7 +100,7 @@ DWORD FFGLParticles::ProcessOpenGL(ProcessOpenGLStruct *pGL)
      windowMidY    = windowHeight / 2; // Middle of the window vertically
   
     //bind the texture handle to its target
-    glBindTexture(GL_TEXTURE_2D, Texture.Handle);
+//    glBindTexture(GL_TEXTURE_2D, Texture.Handle);
     
     //enable texturemapping
     glEnable(GL_TEXTURE_2D);
@@ -110,33 +111,34 @@ DWORD FFGLParticles::ProcessOpenGL(ProcessOpenGLStruct *pGL)
     
     //modulate texture colors with white (just show
     //the texture colors as they are)
-    glColor4f(1.f, 1.f, 1.f, 1.f);
+//    glColor4f(1.f, 1.f, 1.f, 0.1f);
     //(default texturemapping behavior of OpenGL is to
     //multiply texture colors by the current gl color)
     
-    
+
     
     //////////////////////////////////////////////
     //Draw the whole texture (video from resolume)
     //////////////////////////////////////////////
-    glBegin(GL_QUADS);
-    
-    //lower left
-    glTexCoord2d(0,0);
-    glVertex2f(-1,-1);
-    
-    //upper left
-    glTexCoord2d(0, maxCoords.t);
-    glVertex2f(-1,1);
-    
-    //upper right
-    glTexCoord2d(maxCoords.s, maxCoords.t);
-    glVertex2f(1,1);
-    
-    //lower right
-    glTexCoord2d(maxCoords.s, 0.0);
-    glVertex2f(1,-1);
-    glEnd();
+//    glBegin(GL_QUADS);
+//    glClearColor(1.0, 1.0f, 1.0f, .01f); // Set our clear colour to black, full alpha
+//
+//    //lower left
+////    glTexCoord2d(0,0);
+//    glVertex2f(0,-1);
+//    
+//    //upper left
+////    glTexCoord2d(0, maxCoords.t);
+//    glVertex2f(-1,0);
+//    
+//    //upper right
+////    glTexCoord2d(maxCoords.s, maxCoords.t);
+//    glVertex2f(0,1);
+//    
+//    //lower right
+////    glTexCoord2d(maxCoords.s, 0.0);
+//    glVertex2f(1,0);
+//    glEnd();
     
     // Unique identifier for the texture we'll apply to our pointsprites
 //    int textureId;
@@ -178,9 +180,9 @@ DWORD FFGLParticles::ProcessOpenGL(ProcessOpenGLStruct *pGL)
     glTexEnvi(GL_POINT_SPRITE, GL_COORD_REPLACE, GL_TRUE);
     
     // Specify the drawing mode for point sprites
-//    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);       // Draw on top of stuff
+    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL);       // Draw on top of stuff
     //glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);  // Try this if you like...
-    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);   // Or this... not sure exactly how they differ ;-)
+//    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);   // Or this... not sure exactly how they differ ;-)
     
     // Enable 2D Textures
     glEnable(GL_TEXTURE_2D);
@@ -198,9 +200,12 @@ DWORD FFGLParticles::ProcessOpenGL(ProcessOpenGLStruct *pGL)
 //    ILstring filename = "star1.png";
 //    textureId = ilutGLLoadImage(filename);
     
+
+
     // As we're only using a single texture we can just bind to it here instead of per frame
-//    glBindTexture(GL_TEXTURE_2D, textureId);
-    glBindTexture(GL_TEXTURE_2D, Texture.Handle);
+    //    glBindTexture(GL_TEXTURE_2D, textureId);
+    //    glBindTexture(GL_TEXTURE_2D, textureId);
+//    glBindTexture(GL_TEXTURE_2D, Texture.Handle);
 //    glPointSize(1.0f);
 //    glBegin(GL_POINTS); //starts drawing of points
 //    glVertex3f(1.0f,1.0f,0.0f);//upper-right corner
@@ -221,21 +226,56 @@ DWORD FFGLParticles::ProcessOpenGL(ProcessOpenGLStruct *pGL)
     // Seed random number generator
     srand(time(NULL));
     
-    updateAndDraw();
+    
+    
+    ////////////DRAW THE PARTICLES
+    ///////////
+    ///////////
+//    vector<int> emitter;
+    
+//    float a = new Vec2(10, 10), // new keyword
+//    b = Vec2(100, 10);
+//    Vec2 initLoc;
+    
+    Vec2<float> initLocArray[5];
+    
+    initLocArray[0].set(windowMidX/5,windowMidY);
+    initLocArray[1].set(windowMidX/2,windowMidY);
+    initLocArray[2].set(windowMidX,windowMidY);
+    initLocArray[3].set(windowMidX+windowMidX/2,windowMidY);
+    initLocArray[4].set(windowMidX+windowMidX/5,windowMidY);
+
+    Vec2<float> initLoc;
+    initLoc.set(windowMidX, windowMidY);
+    updateAndDraw(initLocArray[0],2);
+    updateAndDraw(initLocArray[1],2);
+    updateAndDraw(initLocArray[2],2);
+    updateAndDraw(initLocArray[3],2);
+    updateAndDraw(initLocArray[4],2);
+    ///////////
 
 return FF_SUCCESS;
 }
 
 // Function to draw our scene
 
-void FFGLParticles::updateAndDraw()
+
+void FFGLParticles::updateAndDraw(Vec2<float> _iLoc, int _numEmitters)
 {
+
+
+    Vec2<float> iLoc = _iLoc;
     // If there are less than MAX_PARTICLES particles in existence, add one more particle to our particle vector
     if (p.size() < MAX_PARTICLES)
     {
-        Particle2D temp(windowMidX, windowMidY);
+        Particle2D temp(iLoc);
+//        Particle2D temp2(iLoc[1]);
         p.push_back(temp);
+//        p2.push_back(temp2);
+        
     }
+    
+    
     
     // Clear the screen and depth buffer
     glClear(GL_COLOR_BUFFER_BIT);
@@ -272,10 +312,14 @@ void FFGLParticles::updateAndDraw()
             // as we go! If you don't assign the next element back to the iterator when calling
             // erase - don't be surprised when your code bombs out with a segfault, k? ;-D
             i = p.erase(i);
+//            i = p2.erase(i);
             
             // ...and then add a new particle to replace it!
-            Particle2D tempParticle(windowMidX, windowMidY);
+
+            Particle2D tempParticle(iLoc);
+//            Particle2D tempParticle2(iLoc[1]);
             p.push_back(tempParticle);
+//            p2.push_back(tempParticle2);
         }
         
     } // End of iterator loop

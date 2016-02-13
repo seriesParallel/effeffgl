@@ -1,10 +1,15 @@
-#ifndef FFGLParticles_H
-#define FFGLParticles_H
+//
+//  FFGLMultEmitters.h
+//  FFGLPlugins
+//
+//  Created by Mary Scahill on 2/10/16.
+//
+//
+
+#ifndef FFGLMultEmitters_h
+#define FFGLMultEmitters_h
 
 #include "../FFGLPluginSDK.h"
-#include <cstdlib>
-#include <vector>
-#include "Vec2.hpp"
 
 class FFGLParticles :
 public CFreeFrameGLPlugin
@@ -14,7 +19,7 @@ public:
     virtual ~FFGLParticles() {}
     
     
-
+    
     
     ///////////////////////////////////////////////////
     // FreeFrame plugin methods
@@ -36,21 +41,21 @@ public:
     
 protected:
     
-    void updateAndDraw(Vec2<float> _iLoc, int _numEmitters);
+    void updateAndDraw(int _emitterID);
     int main(int argc, char **argv);
-//    void Draw1();
-//    void Draw2();
-//    void Draw3();
-//    void Draw4();
-//    void Draw5();
-//    void Draw6();
-//    void Draw7();
-//    void Draw8();
-//    void Draw9();
-//    void DrawDecimal();
-//    
-//    // Time
-//    double m_curTime;
+    //    void Draw1();
+    //    void Draw2();
+    //    void Draw3();
+    //    void Draw4();
+    //    void Draw5();
+    //    void Draw6();
+    //    void Draw7();
+    //    void Draw8();
+    //    void Draw9();
+    //    void DrawDecimal();
+    //
+    //    // Time
+    //    double m_curTime;
 };
 
 

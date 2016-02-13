@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C56AA8B1C59A90A0086C206 /* FFGLParticles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C56AA871C59A3550086C206 /* FFGLParticles.cpp */; };
+		1C48F2931C6CEC7B00703349 /* FFGLParticles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C56AA871C59A3550086C206 /* FFGLParticles.cpp */; };
 		1C56AA8D1C59CA8E0086C206 /* mapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C56AA8C1C59CA8E0086C206 /* mapper.cpp */; };
 		1C56AA9A1C59F65E0086C206 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C56AA991C59F65E0086C206 /* OpenGL.framework */; };
+		1CA9C48F1C6D45DA007EB89E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9C4881C6D45DA007EB89E /* Makefile */; };
 		1CE75EA41C4AFCD1005FAA9C /* FFGLPluginInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C80AEE61AF0030A4DD /* FFGLPluginInfo.cpp */; };
 		1CE75EA51C4AFCD1005FAA9C /* FFGLPluginInfoData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285C90AEE61AF0030A4DD /* FFGLPluginInfoData.cpp */; };
 		1CE75EA61C4AFCD1005FAA9C /* FFGLPluginManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285CA0AEE61AF0030A4DD /* FFGLPluginManager.cpp */; };
@@ -52,6 +53,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C48F28C1C6C072300703349 /* FFGLMultEmitters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FFGLMultEmitters.cpp; path = ../../../Source/FFGLPlugins/FFGLMultEmitters/FFGLMultEmitters.cpp; sourceTree = "<group>"; };
+		1C48F28E1C6C074A00703349 /* FFGLMultEmitters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FFGLMultEmitters.h; path = ../../../Source/FFGLPlugins/FFGLMultEmitters/FFGLMultEmitters.h; sourceTree = "<group>"; };
+		1C48F28F1C6C07B300703349 /* Particle2dMulti.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Particle2dMulti.hpp; path = ../../../Source/FFGLPlugins/Particle2dMulti.hpp; sourceTree = "<group>"; };
+		1C48F2911C6C09DC00703349 /* Emitter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Emitter.hpp; path = ../../../Source/FFGLPlugins/Emitter.hpp; sourceTree = "<group>"; };
 		1C56AA871C59A3550086C206 /* FFGLParticles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FFGLParticles.cpp; path = ../../../Source/FFGLPlugins/FFGLParticles/FFGLParticles.cpp; sourceTree = "<group>"; };
 		1C56AA891C59A3760086C206 /* FFGLParticles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FFGLParticles.h; path = ../../../Source/FFGLPlugins/FFGLParticles/FFGLParticles.h; sourceTree = "<group>"; };
 		1C56AA8A1C59A3B10086C206 /* FFGLMirror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFGLMirror.h; sourceTree = "<group>"; };
@@ -65,6 +70,7 @@
 		1C56AA941C59DBAE0086C206 /* dylib1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = dylib1.o; path = usr/lib/dylib1.o; sourceTree = SDKROOT; };
 		1C56AA951C59DBAE0086C206 /* libdyld.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libdyld.tbd; path = usr/lib/system/libdyld.tbd; sourceTree = SDKROOT; };
 		1C56AA991C59F65E0086C206 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1CA9C4881C6D45DA007EB89E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = ../../../../../Documents/_sonos/particlesystem/Makefile; sourceTree = "<group>"; };
 		1CC007691C503EDC002A0AE7 /* RGBtoHSV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RGBtoHSV.cpp; path = ../../../Source/FFGLPlugins/RGBtoHSV.cpp; sourceTree = "<group>"; };
 		1CC0076A1C503EDC002A0AE7 /* RGBtoHSV.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = RGBtoHSV.hpp; path = ../../../Source/FFGLPlugins/RGBtoHSV.hpp; sourceTree = "<group>"; };
 		1CE75EAE1C4AFCD1005FAA9C /* FFGLBlue.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFGLBlue.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,9 +148,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C48F2901C6C088000703349 /* multi */ = {
+			isa = PBXGroup;
+			children = (
+				1C48F28C1C6C072300703349 /* FFGLMultEmitters.cpp */,
+				1C48F28F1C6C07B300703349 /* Particle2dMulti.hpp */,
+				1C48F2911C6C09DC00703349 /* Emitter.hpp */,
+				1C48F28E1C6C074A00703349 /* FFGLMultEmitters.h */,
+			);
+			name = multi;
+			sourceTree = "<group>";
+		};
+		1C48F2921C6C0DED00703349 /* particles1 */ = {
+			isa = PBXGroup;
+			children = (
+				1C56AA871C59A3550086C206 /* FFGLParticles.cpp */,
+				1CA9C4881C6D45DA007EB89E /* Makefile */,
+				1C56AA8F1C59D57B0086C206 /* Particle2d.hpp */,
+				1C56AA891C59A3760086C206 /* FFGLParticles.h */,
+			);
+			name = particles1;
+			sourceTree = "<group>";
+		};
+		1CA9C4B41C6D589E007EB89E /* inspo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = inspo;
+			sourceTree = "<group>";
+		};
 		2DA285910AEE5D640030A4DD = {
 			isa = PBXGroup;
 			children = (
+				1CA9C4B41C6D589E007EB89E /* inspo */,
 				1C56AA991C59F65E0086C206 /* OpenGL.framework */,
 				1C56AA931C59DBAE0086C206 /* dylib1.10.5.o */,
 				1C56AA941C59DBAE0086C206 /* dylib1.o */,
@@ -156,14 +192,13 @@
 				2DC88AC60AF4153F00199EB1 /* FFGLExtensions.cpp */,
 				2DC88A380AF40E6300199EB1 /* FFGLShader.cpp */,
 				2DC889ED0AF405C700199EB1 /* FFGLTile.cpp */,
-				1C56AA871C59A3550086C206 /* FFGLParticles.cpp */,
-				1C56AA8F1C59D57B0086C206 /* Particle2d.hpp */,
+				1C48F2921C6C0DED00703349 /* particles1 */,
+				1C48F2901C6C088000703349 /* multi */,
 				1C56AA911C59D62A0086C206 /* Colour4f.hpp */,
 				1C56AA921C59D6460086C206 /* Utils.hpp */,
 				1C56AA901C59D5C80086C206 /* Vec2.hpp */,
 				1C56AA8C1C59CA8E0086C206 /* mapper.cpp */,
 				1C56AA8E1C59CABF0086C206 /* mapper.h */,
-				1C56AA891C59A3760086C206 /* FFGLParticles.h */,
 				2D2190870AF02BC1007154B7 /* FFGLMirror.cpp */,
 				1C56AA8A1C59A3B10086C206 /* FFGLMirror.h */,
 				2DA287A70AEEFE950030A4DD /* OpenGL.framework */,
@@ -388,7 +423,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C56AA8B1C59A90A0086C206 /* FFGLParticles.cpp in Sources */,
+				1CA9C48F1C6D45DA007EB89E /* Makefile in Sources */,
+				1C48F2931C6CEC7B00703349 /* FFGLParticles.cpp in Sources */,
 				1CE75EA41C4AFCD1005FAA9C /* FFGLPluginInfo.cpp in Sources */,
 				1CE75EA51C4AFCD1005FAA9C /* FFGLPluginInfoData.cpp in Sources */,
 				1CE75EA61C4AFCD1005FAA9C /* FFGLPluginManager.cpp in Sources */,
